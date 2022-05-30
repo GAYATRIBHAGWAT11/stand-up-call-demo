@@ -1,0 +1,35 @@
+.flex{
+    display: flex;
+     justify-content: space-between; 
+    align-items: center;
+}
+
+.nav{
+    display: inline-flex;
+}
+.container{
+    padding: 100px;
+    background-color: black;
+    
+}
+a{
+    margin: 8px;
+    color: white;
+    /* word-spacing: 10px; */
+}
+.name{
+    margin-left: 50px;
+}
+h1{
+    margin-right: 20px;
+}
+.active{
+    background-color: gold;
+    color: black;
+    padding: 20px 40px;
+    font-size: 20px;
+}
+/* .container-2{ */
+    i{
+        color: gold;
+    }

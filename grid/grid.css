@@ -1,0 +1,68 @@
+.box1 { grid-area: header; 
+}
+
+.box2 { grid-area: menu;
+ }
+.box3 { grid-area: main;
+ }
+.box4 { grid-area: right; 
+}
+.box5 { grid-area: footer;
+ }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: pink;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: lightyellow;
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 20px;
+}
+/* GRID-TEMPLATE-COLUMNS */
+
+.grid-second-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 50px 200px;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: pink;
+   margin-top: 50px;
+}
+.grid-second-container > div{
+    background-color: gold;
+    text-align: center;
+    font-size: 20px;
+}
+.grid-third-container{
+    margin-top: 50px;
+    display: grid;
+    display: flex;
+    grid-template-columns: auto auto auto auto;
+    /* grid-template-rows: 50px 200px; */
+    gap: 20px;
+    background-color: pink;
+    height: 100px;
+    padding: 20px;
+    align-content: center;
+   justify-content: end;
+   align-content: start;
+}
+.grid-third-container > div{
+    background-color: gold;
+    text-align: center;
+    font-size: 20px;
+  padding: 10px;
+  height: 10px;
+}
