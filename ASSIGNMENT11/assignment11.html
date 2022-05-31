@@ -7,6 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assignment11.css">
     <title>Document</title>
+
+
+
+    <style>
+        .flex-container1 {
+            display: flex;
+            align-items: stretch;
+            background-color: #f1f1f1;
+            margin: 50px;
+        }
+
+        .flex-container1>div {
+            background-color: DodgerBlue;
+            color: white;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+            width: 50px;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,76 +48,33 @@
         </nav>
     </header>
     <main>
-        <div class="sticky"> top</div>
+        <!-- <div class="sticky"> top</div>
 
         <div class="box-head">
             <h2>positioning element using float</h2>
+        </div> -->
+        <!-- --------------3rd container(page) ------------------------------>
+
+        
+            <!-- <div class="main-container clearfix">
+                <div id="overflowTest">This text is really long and the height of its
+                    container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the
+                    content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                    tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                    exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel
+                    eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+                    feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+                    luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta
+                    nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi
+                    non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</div>
+
+
+            </div>
         </div>
-
-        <!---------------------------------------- 1st container----------------------------------------- -->
-        
-        <div class="container-1">
-            <div class="div1">sideckick</div>
-            <div class="div2">hero</div>
-            <div class="div3">sidekick</div>
-        </div>
-
-        
-
-<!-- --------------3rd container(page) ------------------------------>
-
-            <div class="container-3">
-
-
-                <div class="clearfix">
-                    <div class="box" style="background-color:#bbb">
-
-                        <!-- <div class="con-3-b1">sideckick</div>  -->
-
-
-                        <div class="together">
-                            <div class="relative">hero
-                                <div class="absolute">sideckick</div>
-                            </div>
-
-                        </div>
+        </div> -->
 
 
 
-
-
-                    </div>
-                    <div class="box" style="background-color:#ccc">
-                        <div class="together-2">
-                            <div class="relative-2">hero
-                                <div class="absolute-2">sideckick</div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-                <div class="main-container clearfix">
-                    <div id="overflowTest">This text is really long and the height of its
-                        container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the
-                        content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
-                        exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel
-                        eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
-                        feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
-                        luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta
-                        nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi
-                        non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</div>
-        
-        
-                </div>
-                </div>
-        </div>
-
-
-       
 
 
         <div class="container-4 clearfix">
@@ -116,6 +94,83 @@
                 </div>
             </div>
         </div>
+
+
+
+
+        <div class="container-5 clearfix">
+            <!-- <div class="container-flex"> -->
+            <div class="multi-flex-container center">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+                <div>13</div>
+                <div>14</div>
+                <div>15</div>
+                <div>16</div>
+                <div>17</div>
+                <div>18</div>
+                <div>19</div>
+                <div>20</div>
+                <div>21</div>
+                <div class="twenty-two ">
+                    <div>22</div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="flex-container1">
+            <div style="flex-grow: 1">1</div>
+            <div style="flex-grow: 1">2</div>
+            <div style="flex-grow: 5">3</div>
+            <div style="flex-grow: 1">4</div>
+            <div style="flex-grow: 1">5</div>
+        </div>
+
+
+
+
+        <ul class="flex-container-x center">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+        </ul>
+        <div class="list">
+            <ul>
+                <li id="six" class="flex-item center">6</li>
+            </ul>
+        </div>
+
+        <div class="big-container">
+            
+        </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
 
 
 
