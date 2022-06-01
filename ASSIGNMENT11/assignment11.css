@@ -26,7 +26,6 @@ nav{
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  /* Style the header */
   .box-head {
     background-color: #f1f1f1;
     padding: 10px;
@@ -34,74 +33,8 @@ nav{
     font-size: 20px;
   }
   main{
-      /* background-color: lightgray; */
 height: 500px;
   }
-
-
-
-
-
-  /* ------------------------1st box------------------------ */
-
-  /* .container-1{
-display: flex;
-display: block;
-display: grid;
-float: left;
-padding: 100px; 
-gap: 5px;
-width: 300px;
-  border: 2px solid red;
-  }
-  
-  .div1 {
-    background: lightblue;
-    border: 2px solid blue;
- padding: 20px;
- width: 100px;
-    
-  }
-  
-  .div2 {
-    background: lightgreen;
-    border: 2px solid green;
-    padding: 20px;
-    width: 100px
-  }
-  
-  .div3 {
-    background: lightseagreen;
-    border: 2px solid seagreen;
-    padding: 20px;
-    width: 100px
-  }
-   */
-
-
-  /* .main-container{ 
-  display: flex;
-    float: left;
-    width: 500px;
-    padding: 0 auto;
-    height: 100px;
-    margin: 30px;
-   background-color: aliceblue; 
-    border: 2px red;
-  }
- 
-
-#overflowTest {
-  background: #4CAF50;
-  color: white;
-  padding: 15px;
-  width: 50%;
-  height: 200px;
-  overflow: scroll;
-  border: 1px solid #ccc;
- margin-left: 200px;
-}  */
-
 
 
 .in-para{
@@ -163,7 +96,7 @@ width: 300px;
 }
 
 .flex-container > div {
-  background-color: red;
+  background-color: pink;
   width: 100px;
   margin: 10px;
   text-align: center;
@@ -188,10 +121,10 @@ font-size: 30px;
 }
 
 div.sticky {
-  position: -webkit-sticky;
   position: sticky;
-  top: 500px;
-  background-color: yellow;
+  /* position: sticky; */
+  top: 200px;
+   background-color: darkblue; 
   width: 50px;
   padding: 10px;
   font-size: 20px;
@@ -211,7 +144,7 @@ div.sticky {
 
 .multi-flex-container > div{
   display: flex;
-  background-color: red;
+  background-color: pink;
   width: 100px;
   margin: 10px;
   text-align: center;
@@ -227,12 +160,13 @@ div.sticky {
 .multi-flex-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: DodgerBlue;
+  background-color: pink;
 }
 
 .multi-flex-container > div {
   display: flex;
-  background-color: #f1f1f1;
+  background-color: yellow;
+  color: black;
   width: 180px;
   margin: 10px;
   text-align: center;
@@ -262,7 +196,7 @@ align-self:center;
 
 
 .flex-item {
-  background: tomato;
+  background: yellow;
   padding: 5px;
   width: 100px;
   height: 50px;
@@ -311,3 +245,81 @@ align-self:center;
 }
 
 
+/* ---------------footer------------------- */
+/* .footer {
+   position: fixed; 
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: aqua;
+  color: white;
+  text-align: center;
+} */
+ .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;} 
+
+
+  footer {
+    margin-top: 100%;
+    clear: both;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: aqua;
+    color: white;
+  }
+  i{
+    float: left;
+    color: black;
+    font-size: large;
+    margin-left: 30px;
+  }
+
+  /* ----------------stick bar------------------ */
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 100px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .home {
+    /* background: #3B5998; */
+    color: white;
+  }
