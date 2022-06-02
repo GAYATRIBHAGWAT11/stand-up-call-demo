@@ -39,7 +39,7 @@ h1{
 
    
     body {
-        background-color: #98DFEA;
+        background-color: lightyellow;
         margin: 0 auto;
         text-align: center;
         padding: 10px;
@@ -53,9 +53,9 @@ h1{
         -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);
       -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);
       box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);
-      animation-timing-function: ease;
+      animation-timing-function: ease-in-out;
       position: relative;
-  animation: mymove 10s infinite;
+  animation: mymove 13s infinite;
      
       }
 
@@ -68,8 +68,8 @@ h1{
         position: relative;
         top: 30%; left: 50%;
         transform: translate(-50%,-50%);
-        width: 200px;
-        height: 200px;
+        width: auto;
+        height: auto;
       }
       
       .banner p {
@@ -83,7 +83,7 @@ h1{
       button {
         width: 200px;
         height: 50px;
-        background-color: #07BEB8;
+        background-color: black;
         color: white;
         font-family: 'Quicksand', sans-serif;
         font-weight: 700;
@@ -94,22 +94,97 @@ h1{
       }
       
       button:hover {
-        background-color: #98DFEA;
-        color: #07BEB8;
+        background-color: orangered;
+        color: yellow;
         -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);
       -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);
       box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);
       }
       #heading{
           font-family: Arial, Helvetica, sans-serif;
-          font-size: 20px;
+          font-size: 50px;
+          text-align: center;
       }
       #highlight{
-          color: lightyellow;
+          color: orangered;
       }
       #highlight-2{
-        color: lightyellow;
+        color: orangered;
+    }
+    .icon{
+      display: flex;
+      justify-content: space-between;
+    }
+    /* --------------------blink text-------------------- */
+    .blink {
+      animation: blink-animation 1s steps(5, start) infinite;
+      -webkit-animation: blink-animation 2s steps(5, start) infinite;
+    }
+    @keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+   
+    /* ----------------------------section services----------------------------------*/
+     *, ::after, ::before {
+      box-sizing: border-box;
+  } 
+    
+    .container-service{
+      display: block;
+      clear: both;
+      /* background-color: black; */
+      /* overflow: hidden; */
+    }
+    .flex-container {
+      display: flex;
+      background-color: gold;
+      margin-top: 20px;
+      /* overflow: hidden; */
+      
     }
     
-    /* --------------------animation part-------------------- */
-   
+    .flex-container > div {
+      background-color: lightyellow;
+      margin: 10px;
+      padding: 30px;
+      font-size: 30px;
+      padding-left: 50px;
+      width: 500px;
+      height: 250px;
+       overflow: hidden; 
+    
+    }
+    .globe {
+      width:20px;
+      height:80px;
+      /* top: -50; */
+      border:1px solid;
+       overflow:hidden; 
+      }
+    p{
+      font-size: 15px;
+    }
+   /* -----------------logo------------- */
+  img{
+    max-width: 150px;
+    max-height: 40px;
+    margin: 50px 30px 50px 30px;
+   }
+   .title{
+     font-size: 50px;
+   }
+   .hire{
+     font-size: 30px;
+   }
+   .d-flex{
+    display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+   }

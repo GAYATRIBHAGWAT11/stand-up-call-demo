@@ -27,7 +27,8 @@ nav .active{
 }
 .first{
     padding:  10px 15px;
-    background-color: lightgrey;
+    background-color: yellow;
+   
 
 }
 .head{
@@ -72,7 +73,7 @@ nav .active{
     clear: both;
 }
 .two{
-    background-color: bisque;
+    background-color: pink;
 }
 #hero-three{
     position: relative;
@@ -123,8 +124,11 @@ nav .active{
   
   }  
   
-  #selected{
+  div #selected{
+
       height: auto;
+      
+     
   }
   p{
       font-size: small;
@@ -134,4 +138,7 @@ nav .active{
       height: 100px;
       width: 100%;
   }
-  
+  .title{
+      font-size: large;
+      
+  }
