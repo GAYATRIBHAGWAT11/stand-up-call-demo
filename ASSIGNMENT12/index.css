@@ -180,10 +180,11 @@ font-size: 15px;
         display: block;
         display: none;
         position: absolute;
-        margin-top: 20px;
+        margin-top: 10px;
         box-sizing: border-box;
         border: 2px white;
         z-index: 5;
+        width: 300px;
     }
 
 #prime:hover .prime-image{ 
