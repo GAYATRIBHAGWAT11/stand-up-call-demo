@@ -5,7 +5,7 @@
     padding:  0;
     box-sizing: border-box;
     color: white;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    
 }
 nav{
     background-color: #000;
@@ -35,7 +35,6 @@ margin: -1px;
     margin-bottom:  -5px;
     padding: 6px 8px 0px 0px;
       height: 100px;  
-    /* width: 50px; */
 } 
 a{
     display: flex;
@@ -106,8 +105,6 @@ nav .search{
 .submenu{
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
-
 
 }
 ul li{
@@ -137,34 +134,43 @@ font-size: 15px;
 /* ---------------------flag dropdown---------------------- */
 #dropdown {
     position: relative;
-    /* display: inline-block; */
-  }
+    /* visibility: visible; */
+    cursor: pointer;
+    /* opacity: 0;
+    border: 0;
+    line-height: 35px;  */
+}
+
   
   .dropdown-content {
      display: none; 
      position: absolute; 
-     background-color: black; 
-    min-width: 140px;
+       background-color: black;  
+    max-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
-  .dropdown-content a {
-    color: white;
-     padding: 12px 16px; 
+  .dropdown-content a { 
+    color: black;
+     /* padding: 12px 16px;  */
      text-decoration:none; 
     display: block;
   }
-
-  /* .dropdown-content a:hover {color: #ddd;}  */
   
   #dropdown:hover .dropdown-content {
       display: block;
     }
   
-  /* #dropdown:hover i {
-      background-color: #3e8e41;
-    } */
+    .dropdown-content label{
+        color: #000;
+    } 
+    .all-dropdown{
+        visibility: visible;
+        width: 50px;
+        font-size: 10px;
+
+    }
 
 /* ---------------------prime image---------------- */
      #prime{
@@ -183,4 +189,159 @@ font-size: 15px;
 #prime:hover .prime-image{ 
     display: block;
 } 
-/* -----------------------prime image part finished */
+/* -----------------------prime image part finished------------ */
+/* ---------------------------ALL DROPDOWN--------------------- */
+.all{
+    position: relative;
+}
+.all-dropdown{
+    display: none; 
+     position: absolute; 
+      background-color: #ddd; 
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.all-dropdown a{
+    color: black;
+    padding: 12px 16px; 
+    text-decoration:none; 
+   display: block; 
+}
+.all:hover .all-dropdown{
+    display: block;
+}
+.all-dropdown a:hover{
+    color: rgb(247, 155, 80);
+    font-size: 10px;
+    font-style: normal;
+}
+/* ---------------------------all dropdown finished----------------- */
+
+/* -------------------main part-------------------------- */
+.main{
+    clear: both;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    margin: 0;
+    margin-top: 0px;
+    grid-gap: 5px;
+    padding:20px;
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: black;
+    max-height: 500px;
+ 
+}
+.container{
+    width: 400px;
+    height: 500px;
+    border: none;
+    padding: 15px 15px 0px 15px;
+  padding-bottom: 30px;
+   margin-right: -60px; 
+  background-color: #232f3e;
+  overflow-x: auto;
+  z-index: 10;
+  
+}
+.gallery-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 2px;
+    padding-left: 40px;
+     margin-left: 30px;
+    grid-row-gap: 50px;
+
+}
+.gallery img{
+    width: 120px;
+}
+.head{
+    clear: both;
+   font-size: 20px;
+   overflow: auto;
+   margin-left: 30px;
+   margin-right: 75px;
+
+}
+
+
+/* ----------------row main------------------- */
+.image{
+    float: left;
+    width: 80%;
+    padding: 5px;
+}
+.image #pic{
+ width: 100%;
+    height: 150px;
+}
+.flex{
+    display: flex;
+}
+.row-container{
+    margin: 30px;
+    padding: 20px;
+    display: grid;
+    width: fit-content;
+     overflow: hidden; 
+}
+.rowmain{
+    grid-gap: 30px;
+    width: 100%;
+    overflow: auto;
+
+}
+.background{
+    clear: both;
+    display: block;
+}
+
+.button{
+     margin: 20px 70px;
+    margin-left: 40px;
+   
+
+    
+}
+.button button{
+    background-color: rgb(247, 155, 80);
+     color: black;
+    padding: 10px;
+    z-index: 5;
+    border-radius: 5%;
+    padding: 0 50px;
+}
+
+.box-image{
+    clear: both;
+    display: block;
+    margin: 110px  20px 0px 50px ;
+}
+
+/* --------------------right lest icon---------------- */
+
+ .next{
+     position:relative; 
+      top: -180px;
+      justify-content: space-between;
+      display: flex;
+} 
+.gallery-container{
+    background-color: black;
+   
+}
+.background img{
+    width: 100%;
+}
+
+
